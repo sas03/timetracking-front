@@ -1,0 +1,35 @@
+<div id="authenticationPage">
+    <div class="header">
+        <div class="logo-wrapper">
+            <img src="../../../../assets/vkii.png" alt="vkii logo">
+        </div>
+    </div>
+    <div class="wrapper">
+        <form id="loginForm" action="">
+            <h1>Log in</h1>
+            <!-- email -->
+            <div class="form-input">
+                <input matInput placeholder="Enter email" formControlName="email" required>
+                <mat-error *ngIf="email?.invalid">Email is required</mat-error>
+            </div>
+            <!-- password -->
+            <div class="form-input">
+                <input matInput placeholder="Enter password" formControlName="password" required>
+                <mat-error *ngIf="password?.invalid">Password is required</mat-error>
+            </div>
+
+            <div class="options-container">
+                <mat-checkbox class="example-margin">Stay logged in</mat-checkbox>
+                <a href="#" mat-primary> Forgot password?</a>
+            </div>
+            <button type="submit"> Log in </button>
+        </form>
+    </div>
+    <div class="footer">
+        <img src="../../../../assets/safe.png" alt="safty icon">
+        <span>
+            your data is save with us: 
+            <a href="#" mat-primary class="privacy-btn"> Security privacy</a>
+        </span>
+    </div>
+</div>
